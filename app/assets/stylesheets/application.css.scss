@@ -183,13 +183,16 @@ body {
 
 h1.cover-heading {
     font-weight: 500;
-    color: #333;
+    color: #000;
     text-align: center;
-    text-shadow: 0 2px 15px rgba(255,231,92,1);
+    font-size: 8em;
+    font-family: Impact;
 }
 
 .audioButton img {
     padding: 5%;
     max-width:100%;
     width:500px;
+    // -webkit-filter: drop-shadow(5px 5px 5px #222);
+    // filter: drop-shadow(5px 5px 5px #222);
 }

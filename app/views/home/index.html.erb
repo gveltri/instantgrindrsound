@@ -23,8 +23,18 @@
 </div>
 
 <script>
+$(document).ready(function(){
+  $('.audioButton').css({"-webkit-filter":"drop-shadow(0px 6px 9px rgba(0, 0, 100, 0.8))","filter":"drop-shadow(0px 6px 9px rgba(0, 0, 100, 0.8))"});
+});
+
 $(".audioButton").on("click", function() {
   $(".audio-play")[0].currentTime = 0;
   return $(".audio-play")[0].play();
+});
+
+$('.audioButton').mousedown(function() {
+   $('.audioButton').css({"-webkit-filter":"drop-shadow(0px 0px 0px #222)","filter":"drop-shadow(0px 0px 0px #222)","padding-top":"0px"});
+}).bind('mouseup mouseleave', function() {
+   $('.audioButton').css({"-webkit-filter":"drop-shadow(0px 6px 9px rgba(0, 0, 100, 0.8))","filter":"drop-shadow(0px 6px 9px rgba(0, 0, 100, 0.8))","padding-top":"0px"});
 });
 </script>
